@@ -16,6 +16,7 @@ body{
   padding: 2px;
   border-top-color: #171717;
   border-width: 2px;
+  display: block;
 }
 
 .dropbtn{
