@@ -20,15 +20,15 @@ body{
 }
 
 .dropbtn{
-  background-color: #bbbbbb;
+  background-color: #171717;
   padding: 2px;
   border:none;
   cursor: pointer;
 }
 .dropbtn:hover, .dropbtn:focus {
 
-  background-color: #131313;
-  color:#131313;
+  background-color: #bbbbbb;
+
 }
 
 .dropdown{
