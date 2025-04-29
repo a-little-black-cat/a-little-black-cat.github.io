@@ -13,9 +13,9 @@ body{
 }
 .introBox{
   background-color: #bbbbbb;
-  padding: 10px;
+  padding: 2px;
   border-top-color: #171717;
-  border-width: 3px;
+  border-width: 2px;
 }
 
 .dropbtn{
@@ -64,6 +64,7 @@ body{
                 }
 
 h1{
+  background-color: #bbbbbb;
   font-family: "Pixelify Sans";
   color: #131313;
   font-size: 36px;
