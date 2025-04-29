@@ -11,6 +11,12 @@ body{
   cursor: pointer;
 
 }
+.introBox{
+  background-color: #bbbbbb;
+  padding: 10px;
+  border-top-color: #171717;
+  border-width: 3px;
+}
 
 .dropbtn{
   background-color: #bbbbbb;
@@ -59,18 +65,28 @@ body{
 
 h1{
   font-family: "Pixelify Sans";
-  color: #131313
+  color: #131313;
+  font-size: 36px;
 }
 
-h2{}
+h2{  font-family: "Pixelify Sans";
+  background-color: #bbbbbb;
+  color: #131313;
+  font-size: 20px;
+  line-height:5px;}
 
 h3{
   font-family: "Pixelify Sans";
   background-color: #bbbbbb;
   color: #131313;
   font-size: 14px;
-  font-size:14px;
-  line-height:14px;
+  line-height:10px;
 }
+hr.solid{
+  border: 1px solid #131313;
+}
+
+
+
 
 
