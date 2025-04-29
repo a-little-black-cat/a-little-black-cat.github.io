@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="stylesheet.css"></head>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css"></head>
+    <script src="webProgram.js"></script>
     <div id="myNavPanel" class="navPanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">???</a>
+        <div class="title"><h1>A Little Black Cat's Blog</h1></div>
+        <div class="dropdown">
+            <button onclick="dropdownMenu()" class="dropbtn"><h3>Menu</h3></button>
+            <div id="dropdownMenu" class="dropdown-content">
+                <a href="#"><h3>Button 1</h3></a>
+                <a href="#"><h3>Button 2</h3></a>
+                <a href="#"><h3>Button 3</h3></a>
+            </div>
+        </div>
     </div>
 <body>
-
-<button class="openbtn" onclick="openNav()">&#128576;</button>
     <h1>A Little Black Cat's Blog</h1>
     <p>I'm hosted with GitHub Pages.</p>
 </body>

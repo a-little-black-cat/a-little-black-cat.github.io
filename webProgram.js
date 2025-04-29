@@ -1,9 +1,17 @@
-/* Set the width of the sidebar to 250px (show it) */
-function openNav() {
-    document.getElementById("myNavPanel").style.width = "250px";
-  }
-  
-  /* Set the width of the sidebar to 0 (hide it) */
-  function closeNav() {
-    document.getElementById("myNavPanel").style.width = "0";
-  }
+
+function dropdownMenu(){
+    document.getElementById("dropdownMenu").classList.toggle("show");
+}
+
+window.onclick = function(event){
+    if (!event.target.matches('.dropdownMenu')){
+        var dropdowns = document.getElementById("dropdownMenu");
+        var i;
+        for (i=0 ; i<dropdowns.length;i++){
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('.show')){
+                openDropdown.classList.remove('.show');
+            }
+        }
+    }
+}
