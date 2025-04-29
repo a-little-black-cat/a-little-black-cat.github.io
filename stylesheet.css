@@ -3,6 +3,8 @@ body{
   background-color: #171717;
   border-color: #171717;
   border-width: 10px;
+  display: block;
+  align-items: center;
 
 
 }
@@ -10,8 +12,10 @@ body{
   background-color: #bbbbbb;
   color: #171717;
   padding: 10px;
-  border:none;
+  border: #171717;
   cursor: pointer;
+  display: block;
+  align-items: center;
 
 }
 .introBox{
@@ -63,7 +67,7 @@ body{
 .pixelify-sans-<uniquifier> {
                   font-family: "Pixelify Sans";
                   font-optical-sizing: auto;
-                  font-weight: <weight>;
+                  font-weight: normal;
                   font-style: normal;
                 }
 
