@@ -1,62 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="stylesheet.css"></head>
-        <link rel="stylesheet" href="catanimcascaded.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>A Little Black Cat's Blog</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="catanimcascaded.css">
+    <link rel="stylesheet" href="flicker-screen.css"> <!-- Add this new CSS file -->
+
+    <!-- Scripts -->
     <script src="webProgram.js"></script>
+</head>
 
-    </div>
 <body>
-    <div id="myNavPanel" class="navPanel">
-        <div class="title">
-            <table>
-                <td><h1>A Little Black Cat's Blog </h1></td>
-                <th><div class="cat">
-                    <div class="ear ear--left"></div>
-                    <div class="ear ear--right"></div>
-                    <div class="face">
-                        <div class="eye eye--left">
-                            <div class="eye-pupil"></div>
+<!-- CRT Flicker Overlay -->
+<div class="crt-flicker-overlay"></div>
+<div class="crt-scanlines"></div>
+
+<div id="myNavPanel" class="navPanel">
+    <div class="title">
+        <table>
+            <tr>
+                <td><h1 class="glitch-text">A Little Black Cat's Blog</h1></td>
+                <th>
+                    <div class="cat">
+                        <div class="ear ear--left"></div>
+                        <div class="ear ear--right"></div>
+                        <div class="face">
+                            <div class="eye eye--left">
+                                <div class="eye-pupil"></div>
+                            </div>
+                            <div class="eye eye--right">
+                                <div class="eye-pupil"></div>
+                            </div>
+                            <div class="muzzle"></div>
                         </div>
-                        <div class="eye eye--right">
-                            <div class="eye-pupil"></div>
-                        </div>
-                        <div class="muzzle"></div>
                     </div>
-                </div></th>
-            </table>
-        </div>
+                </th>
+            </tr>
+        </table>
     </div>
+</div>
 
-
-    <div class="dropdown">
-        <button onclick="dropdownMenu()" class="dropbtn"><h3>Menu</h3></button>
-        <div id="dropdownMenu" class="dropdown-content">
-            <a href="#"><h3>Button 1</h3></a>
-            <a href="#"><h3>Button 2</h3></a>
-            <a href="#"><h3>Button 3</h3></a>
-        </div>
+<div class="dropdown">
+    <button onclick="dropdownMenu()" class="dropbtn"><h3>Menu</h3></button>
+    <div id="dropdownMenu" class="dropdown-content">
+        <a href="#"><h3>Button 1</h3></a>
+        <a href="#"><h3>Button 2</h3></a>
+        <a href="#"><h3>Button 3</h3></a>
     </div>
+</div>
+
 <hr class="solid">
+
 <div id="intro" class="introBox">
     <table>
-        <tr>
-            <td><h2>About 'Black Cat'</h2></td>
-        </tr>
-        <tr>
-            <td><h3>Name: Berenis</h3></td>
-        </tr>
-        <tr>
-            <td><h3>Computer Science and IMGD Undergrad @ WPI</h3></td>
-        </tr>
-        <tr>
-            <td><h3>This page is aimed to be a means of practice and hopefully a portfolio page by the end of it.</h3></td>
-        </tr>
+        <tr><td><h2 class="glitch-text">About 'Black Cat'</h2></td></tr>
+        <tr><td><h3>Created by: Berenis<br>Computer Science and IMGD Undergrad @ WPI<br>This page is intended as a means of practice and, hopefully, will become a portfolio by the end.</h3></td></tr>
     </table>
 </div>
-</hr>
 </body>
 </html>

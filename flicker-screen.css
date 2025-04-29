@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: #111;
+    color: #00FF00;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Subtle CRT Flicker */
+.crt-flicker-overlay {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0.01); /* Lower flicker brightness */
+    pointer-events: none;
+    animation: flicker 0.3s infinite;
+    z-index: 10;
+}
+
+/* Softer Scanlines and Color Distortion */
+.crt-scanlines {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+            linear-gradient(rgba(0, 0, 0, 0.08) 50%, transparent 50%),
+            linear-gradient(90deg, rgba(255, 0, 0, 0.01), rgba(0, 255, 0, 0.005), rgba(0, 0, 255, 0.01));
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+    z-index: 9;
+}
+
+/* Flicker Keyframes (slower and softer) */
+@keyframes flicker {
+    0%, 100% { opacity: 0.02; }
+    50% { opacity: 0.06; }
+}
+
+/* Softer Glitch Text Animation */
+@keyframes textShadow {
+    0%, 100% {
+        text-shadow: 0.5px 0 red, -0.5px 0 blue, 0 0 1px lime;
+    }
+    50% {
+        text-shadow: -1px 0 red, 1px 0 blue, 0 0 2px lime;
+    }
+}
+
+.glitch-text {
+    animation: textShadow 2s infinite;
+}

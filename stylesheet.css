@@ -1,6 +1,9 @@
 /* The sidepanel menu */
 body{
   background-color: #171717;
+  border-color: #171717;
+  border-width: 10px;
+
 
 }
 .navPanel{
@@ -13,7 +16,7 @@ body{
 }
 .introBox{
   background-color: #bbbbbb;
-  padding: 2px;
+  padding: 10px;
   border-top-color: #171717;
   border-width: 2px;
   display: block;
@@ -83,7 +86,7 @@ h3{
   background-color: #bbbbbb;
   color: #131313;
   font-size: 14px;
-  line-height:10px;
+  line-height:15px;
 }
 hr.solid{
   border: 1px solid #131313;
